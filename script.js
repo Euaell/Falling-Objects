@@ -57,6 +57,25 @@ function createElement() {
 
 }
 
-setInterval(() => {
-    createElement()
-}, 300)
+let starter = document.getElementById('starter')
+
+starter.addEventListener('click', () => {
+    
+    if (starter.innerHTML == 'Start') {
+        starter.innerHTML = 'Stop'
+        starter.classList.add('stop')
+        starter.classList.remove('start')
+        createElement()
+        setInterval(() => {
+            createElement()
+        }, 300)
+    } else {
+        starter.innerHTML = 'Start'
+        starter.classList.add('start')
+        starter.classList.remove('stop')
+        
+        location.reload()
+    }
+
+})
+

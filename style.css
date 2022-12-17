@@ -127,3 +127,39 @@ html {
         transform: translateY(65vh);
     }
 }
+
+#starter {
+    border: var(--Darkish_gray) 1px solid;
+    border-radius: 10px;
+    color: var(--White);
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 10px auto;
+    padding: 10px;
+    width: 90%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#starter:hover {
+    font-size: 1.7rem;
+    transition: 0.2s;
+}
+
+.start {
+    background-color: var(--Muted_Blue);
+}
+
+.start:hover {
+
+    background-color: var(--Marine_blue);
+}
+
+.stop {
+    background-color: var(--Clown_Orange);
+}
+
+.stop:hover {
+    background-color: var(--Strawberry_red);
+}
