@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+    /* Primary Colors */
+    --Marine_blue: hsl(213, 96%, 18%);
+    --Purplish_blue: hsl(243, 100%, 62%);
+    --Pastel_blue: hsl(228, 100%, 84%);
+    --Light_blue: hsl(206, 94%, 87%);
+    --Strawberry_red: hsl(354, 84%, 57%);
+
+    /* Secondary Colors */
+    --Cool_gray: hsl(231, 11%, 63%);
+    --Light_gray: hsl(229, 24%, 87%);
+    --Magnolia: hsl(217, 100%, 97%);
+    --Alabaster: hsl(231, 100%, 99%);
+    --White: hsl(0, 0%, 100%);
+    --Orangish: #FFBB98;
+    --Beign: #FBE0C3;
+    --Blueish_gray: #7D8E95;
+    --Darkish_gray: #344648;
+    --Dark_red: #79031D;
+
+    /* Outdore yoga */
+    --Darkish_green: #2A403D;
+    --Reder: #D05663;
+    --Lighter_green: #748B6F;
+    --Bluish: #C3CBD6;
+
+    /*Coral Greenery*/
+    --Coral_Orange: #D96846;
+    --Coral_Green: #596235;
+    --Coral_Light_Gray: #CDCBD6;
+    --Coral_Dark_Gray: #4D4D4D;
+    --Coral_Dark: #2F3020;
+    --Coral_Blue: #191718;
+
+    /* Clown */
+    --Clown_Orange: #B74803;
+    --Clown_Light_Orange: #CC6D3D;
+    --Clown_Blue: #022E51;
+    --Clown_Light_Blue: #A3B4C8;
+
+    /* Lustrous */
+    --Lustrous_Pink: #F2D2D2;
+    --Lustrous_Light_Pink: #F7E9E9;
+    --Lustrous_Dark_Pink: #D9A6A6;
+    --Lustrous_Green: #3D4E17;
+    --Lustrous_Light_Green: #A3B86C;
+    --Lustrous_Dark_Green: #2F3D0A;
+    --Lustrous_Yellow: #C7A003;
+    --Lustrous_Light_Yellow: #EDE599;
+    --Lustrous_Black: #151F1E;
+    --Lustrous_Orange: #D08856;
+
+    /* Muted */
+    --Muted_Brown: #A15C38;
+    --Muted_Light_Brown: #C3A6A0;
+    --Muted-White: #F7F1F0;
+    --Muted_Dark: #3D3D3D;
+    --Muted_Blue: #285185;
+    --Muted_Blue_Gray: #CCD9E2;
+    --Muted_Yellow: #F3D849;
+    --Muted_Green: #5A8100;
+    --Muted_Orange: #FF6C02;
+
+    /* Typography */
+    --Montserrat: 'Montserrat', sans-serif;
+    --Font_size: 1.6rem;
+    --Font_weight: 400;
+
+}
+
+html {    
+    background-color: var(--Clown_Light_Blue);
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.container {
+    background-color: var(--Muted_Blue);
+    border-radius: 10px;
+    /*box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);*/
+    border: var(--Darkish_gray) 1px solid;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.falling {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--Alabaster);
+}
+
+
+.game {
+    background-color: var(--Muted_Yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 20px;
+    border: var(--Darkish_gray) 1px solid;
+}
+
+.obj {
+    position: fixed;
+    top: -vh;
+    font-size: 2rem;
+    transform: translateY(0);
+    animation: fall 1s linear forwards;
+    cursor: pointer;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(65vh);
+    }
+}
